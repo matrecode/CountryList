@@ -6,7 +6,8 @@ const CountryFlags = () => {
   function fetchCountry() {
     fetch("https://restcountries.com/v3.1/all")
       .then((res) => res.json())
-      .then((data) => setCountry(data));
+      .then((data) => setCountry(data))
+      .catch((error) => console.log("APi is not working", error));
   }
 
   useEffect(() => {

@@ -5,9 +5,10 @@
   justify-content: center;
   align-items: center;
   max-width: 100%;
+  margin-top: 20px;
 }
 
-.card {
+.countryCard {
   border: 1px solid gray;
   padding: 10px;
   border-radius: 10px;
@@ -30,4 +31,8 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+input {
+  width: 600px;
 }

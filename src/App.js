@@ -3,7 +3,9 @@ import CountryFlags from "./CountryFlags";
 export default function App() {
   return (
     <>
-      <CountryFlags />
+      <div className="App">
+        <CountryFlags />
+      </div>
     </>
   );
 }

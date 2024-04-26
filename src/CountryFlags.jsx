@@ -26,16 +26,16 @@ const CountryFlags = () => {
     <>
       <div className={styles.container}>
         <input type="text" value={search} onChange={handleSearchChange} />
-        <div className={styles.box}>
+        <div className={styles.countryCard}>
           {search === ""
             ? countries.map((country) => (
-                <div className={styles.countryCard} key={country.name.common}>
+                <div className={styles.card} key={country.name.common}>
                   <img src={country.flags.png} alt={country.name.common} />
                   <p>{country.name.common}</p>
                 </div>
               ))
             : filteredCountries.map((country) => (
-                <div className={styles.countryCard} key={country.name.common}>
+                <div className={styles.card} key={country.name.common}>
                   <img src={country.flags.png} alt={country.name.common} />
                   <p>{country.name.common}</p>
                 </div>

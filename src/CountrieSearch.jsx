@@ -27,7 +27,7 @@ const CountrieSearch = () => {
   };
 
   var filteredData = countryData.filter((country) =>
-    country.name.common.includes(searchText)
+    country.name.common.toLowerCase().includes(searchText.toLowerCase())
   );
   // console.log(filteredData);
 
